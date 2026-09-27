@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurea Atelier — Quality in every sip and bite</title>
+  <meta name="description" content="Aurea Atelier is a coffee house and culinary studio. Carefully picked beans, a small kitchen, and the whole experience." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,480;9..144,560&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/more.css" />
+</head>
+<body>
+  <a class="skip" href="#highlights">Skip to content</a>
+  <header class="nav">
+    <a class="brand" href="#top">
+      <img src="assets/logo.svg" alt="Aurea mark" />
+      <span class="brand-text">
+        <strong data-text="brand.wordmark">Aurea</strong>
+        <span data-text="brand.studio">Atelier</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#highlights">Highlights</a>
+      <a href="#mission">Mission</a>
+      <a href="#selection">Selection</a>
+      <a href="#experience">Ritual</a>
+      <a href="#visit">Visit</a>
+      <a class="nav-cta" href="#visit">Reserve a table</a>
+    </nav>
+    <button class="icon-btn burger" id="burger" aria-label="Open menu">☰</button>
+  </header>
+  <section class="hero" id="top">
+    <div class="hero-media">
+      <div class="hero-slides" aria-hidden="true">
+        <span style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=80')"></span>
+        <span style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=2000&q=80')"></span>
+        <span style="background-image:url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=2000&q=80')"></span>
+        <span style="background-image:url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=2000&q=80')"></span>
+      </div>
+      <video id="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=80">
+        <source src="https://videos.pexels.com/video-files/4795016/4795016-hd_1920_1080_25fps.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="kicker" data-text="hero.kicker">A coffee atelier, not a counter.</div>
+      <h1 data-text="hero.title">Carefully picked. Patiently poured.</h1>
+      <p class="lede" data-text="hero.subtitle">Single-origin beans and a small kitchen built around flavor, texture, and the quiet luxury of time.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#selection">Taste the selection</a>
+        <a class="btn btn-ghost" href="#experience">Our ritual</a>
+      </div>
+    </div>
+    <div class="scroll-hint">Scroll the house</div>
+    <button class="video-toggle" id="video-toggle" title="Unmute">♪</button>
+  </section>
+  <section class="highlights" id="highlights">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">The house in four notes</p>
+          <h2>Highlights</h2>
+        </div>
+        <p class="muted" data-text="brand.promise">It was never just eating. It is the whole experience.</p>
+      </div>
+      <div class="highlight-grid" id="highlight-grid"></div>
+    </div>
+  </section>
+  <section class="mission" id="mission">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Why the house exists</p>
+          <h2>Mission & vision</h2>
+        </div>
+      </div>
+      <div class="mission-grid">
+        <article class="panel panel-dark">
+          <div class="label" data-text="mission.label">Mission</div>
+          <p data-text="mission.text"></p>
+        </article>
+        <article class="panel panel-gold">
+          <div class="label" data-text="vision.label">Vision</div>
+          <p data-text="vision.text"></p>
+        </article>
+      </div>
+      <p class="manifesto" data-text="manifesto"></p>
+    </div>
+  </section>
+  <section id="selection">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">From farm lot to pastry case</p>
+          <h2>The selection</h2>
+        </div>
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-target="beans-panel">Coffee beans</button>
+          <button class="tab" data-target="food-panel">Kitchen & pastry</button>
+        </div>
+      </div>
+      <div class="product-panels">
+        <div class="panel-block active" id="beans-panel">
+          <div class="bean-layout">
+            <div class="bean-nav" id="bean-nav"></div>
+            <div class="bean-stage" id="bean-stage"></div>
+          </div>
+        </div>
+        <div class="panel-block" id="food-panel">
+          <div class="food-grid" id="food-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="experience" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" style="color:#f3e0b5">Not a transaction</p>
+          <h2>The whole experience</h2>
+        </div>
+        <p class="muted" style="color:rgba(251,246,238,.7)">A visit is paced like a tasting: arrive, choose, pause, taste.</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+  <section id="visit">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Come sit</p>
+          <h2>Visit the atelier</h2>
+        </div>
+      </div>
+      <div class="visit-grid">
+        <article class="visit-card">
+          <h3 data-text="brand.descriptor">Coffee House & Culinary Studio</h3>
+          <p data-text="contact.address"></p>
+          <p data-text="contact.hours"></p>
+          <p class="muted" data-text="contact.closed"></p>
+          <p><span data-text="contact.phone"></span><br /><span data-text="contact.email"></span></p>
+          <div class="hero-actions" style="margin-top:18px">
+            <a class="btn btn-gold" data-maps href="https://maps.google.com/?q=Baliuag+Bulacan" target="_blank" rel="noopener">Open map</a>
+            <a class="btn" style="background:#efe0c4" data-email-link href="mailto:hello@aurea-atelier.cafe">Write to us</a>
+          </div>
+        </article>
+        <article class="visit-card">
+          <h3>Reserve a quiet table</h3>
+          <p class="muted">A short note is enough. We confirm by email.</p>
+          <form id="visit-form">
+            <input name="name" placeholder="Your name" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <input name="when" placeholder="Preferred day / hour" />
+            <textarea name="note" placeholder="Allergies, celebration, espresso or filter…"></textarea>
+            <button class="btn btn-gold" type="submit">Send request</button>
+          </form>
+        </article>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="year"></span> <span data-text="brand.name">Aurea</span> <span data-text="brand.studio">Atelier</span></div>
+      <div data-text="footerNote"></div>
+    </div>
+  </footer>
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+      <p class="eyebrow">From the kitchen</p>
+      <h3 id="modal-title" style="font-family:var(--font-display);font-size:32px;margin:8px 0 12px;"></h3>
+      <p id="modal-text" class="muted"></p>
+    </div>
+  </div>
+  <button class="editor-fab" id="editor-fab" type="button">Edit page</button>
+  <aside class="editor-panel" id="editor-panel" aria-label="Page editor">
+    <div class="editor-head">
+      <strong>Edit house copy</strong>
+      <button class="icon-btn" id="editor-close" aria-label="Close editor">×</button>
+    </div>
+    <div class="editor-body" id="editor-body"></div>
+    <div class="editor-actions">
+      <button class="btn btn-gold" id="editor-save" type="button">Save</button>
+      <button class="btn" id="editor-reset" type="button" style="background:#efe0c4">Reset defaults</button>
+    </div>
+  </aside>
+  <div class="toast" id="toast"></div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
